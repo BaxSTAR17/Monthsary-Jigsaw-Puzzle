@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY MONTHSARY</title>
+    <style>
+        body {
+            margin: auto;
+            align-items: center;
+            display: flex;
+        }
+        .board {
+            margin-left: 700px;
+            border: solid;
+            border-style: ridge;
+            border-width: 30px;
+            background-color: peru;
+            background-image: url(HUGGY.png);
+            background-blend-mode: overlay;
+            border-color:saddlebrown;
+            width: 660px;
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .board > div {
+            display: flex;
+            width: 660px;
+            height: 66px;
+            flex-direction: row;
+        }
+
+        .rows1 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows2 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows3 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows4 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows5 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows6 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows7 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows8 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows9 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .rows10 > div {
+            width:66px;
+            height:66px;
+            border: solid;
+            border-color:rgb(184, 120, 56);
+        }
+
+        .flexboard {
+            margin: auto;
+            width: 1460px;
+            height: 710px;
+            position: relative;
+            border: solid;
+            border-color:black;
+            border-radius: 30px;
+            border-width: 5px;
+        }
+
+        .pieces1 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces2 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces3 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces4 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces5 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces6 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces7 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces8 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces9 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces10 > div {
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            border: solid;
+            border-color:black;
+            background-image: url(HUGGY.png);
+        }
+
+        .pieces1 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces1 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces2 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces2 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces3 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces3 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces4 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces4 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces5 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces5 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces6 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces6 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces7 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces7 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces8 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces8 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces9 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces9 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+
+        .pieces10 > div:hover{
+            border-color: greenyellow;
+            border-radius: 20px;
+        }
+
+        .pieces10 > div:active{
+            border-color: darkred;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="rows1" id="p1">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows2" id="p2">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows3" id="p3">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows4" id="p4">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows5" id="p5">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows6" id="p6">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows7" id="p7">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows8" id="p8">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows9" id="p9">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+        <div class="rows10" id="p10">
+            <div class="holder" id="column1"></div>
+            <div class="holder" id="column2"></div>
+            <div class="holder" id="column3"></div>
+            <div class="holder" id="column4"></div>
+            <div class="holder" id="column5"></div>
+            <div class="holder" id="column6"></div>
+            <div class="holder" id="column7"></div>
+            <div class="holder" id="column8"></div>
+            <div class="holder" id="column9"></div>
+            <div class="holder" id="column10"></div>
+        </div>
+    </div>
+        <div class="pieces1" id="p1">
+            <div class="p11" id="1piece1"></div>
+            <div class="p1" id="1piece2"></div>
+            <div class="p1" id="1piece3"></div>
+            <div class="p1" id="1piece4"></div>
+            <div class="p1" id="1piece5"></div>
+            <div class="p1" id="1piece6"></div>
+            <div class="p1" id="1piece7"></div>
+            <div class="p1" id="1piece8"></div>
+            <div class="p1" id="1piece9"></div>
+            <div class="p10" id="1piece10"></div>
+        </div>
+        <div class="pieces2" id="p2">
+            <div class="p2" id="2piece1"></div>
+            <div class="p2" id="2piece2"></div>
+            <div class="p2" id="2piece3"></div>
+            <div class="p2" id="2piece4"></div>
+            <div class="p2" id="2piece5"></div>
+            <div class="p2" id="2piece6"></div>
+            <div class="p2" id="2piece7"></div>
+            <div class="p2" id="2piece8"></div>
+            <div class="p2" id="2piece9"></div>
+            <div class="p2" id="2piece10"></div>
+        </div>
+        <div class="pieces3" id="p3">
+            <div class="p3" id="3piece1"></div>
+            <div class="p3" id="3piece2"></div>
+            <div class="p3" id="3piece3"></div>
+            <div class="p3" id="3piece4"></div>
+            <div class="p3" id="3piece5"></div>
+            <div class="p3" id="3piece6"></div>
+            <div class="p3" id="3piece7"></div>
+            <div class="p3" id="3piece8"></div>
+            <div class="p3" id="3piece9"></div>
+            <div class="p3" id="3piece10"></div>
+        </div>
+        <div class="pieces4" id="p4">
+            <div class="p4" id="4piece1"></div>
+            <div class="p4" id="4piece2"></div>
+            <div class="p4" id="4piece3"></div>
+            <div class="p4" id="4piece4"></div>
+            <div class="p4" id="4piece5"></div>
+            <div class="p4" id="4piece6"></div>
+            <div class="p4" id="4piece7"></div>
+            <div class="p4" id="4piece8"></div>
+            <div class="p4" id="4piece9"></div>
+            <div class="p4" id="4piece10"></div>
+        </div>
+        <div class="pieces5" id="p5">
+            <div class="p5" id="5piece1"></div>
+            <div class="p5" id="5piece2"></div>
+            <div class="p5" id="5piece3"></div>
+            <div class="p5" id="5piece4"></div>
+            <div class="p5" id="5piece5"></div>
+            <div class="p5" id="5piece6"></div>
+            <div class="p5" id="5piece7"></div>
+            <div class="p5" id="5piece8"></div>
+            <div class="p5" id="5piece9"></div>
+            <div class="p5" id="5piece10"></div>
+        </div>
+        <div class="pieces6" id="p6">
+            <div class="p6" id="6piece1"></div>
+            <div class="p6" id="6piece2"></div>
+            <div class="p6" id="6piece3"></div>
+            <div class="p6" id="6piece4"></div>
+            <div class="p6" id="6piece5"></div>
+            <div class="p6" id="6piece6"></div>
+            <div class="p6" id="6piece7"></div>
+            <div class="p6" id="6piece8"></div>
+            <div class="p6" id="6piece9"></div>
+            <div class="p6" id="6piece10"></div>
+        </div>
+        <div class="pieces7" id="p7">
+            <div class="p7" id="7piece1"></div>
+            <div class="p7" id="7piece2"></div>
+            <div class="p7" id="7piece3"></div>
+            <div class="p7" id="7piece4"></div>
+            <div class="p7" id="7piece5"></div>
+            <div class="p7" id="7piece6"></div>
+            <div class="p7" id="7piece7"></div>
+            <div class="p7" id="7piece8"></div>
+            <div class="p7" id="7piece9"></div>
+            <div class="p7" id="7piece10"></div>
+        </div>
+        <div class="pieces8" id="p8">
+            <div class="p8" id="8piece1"></div>
+            <div class="p8" id="8piece2"></div>
+            <div class="p8" id="8piece3"></div>
+            <div class="p8" id="8piece4"></div>
+            <div class="p8" id="8piece5"></div>
+            <div class="p8" id="8piece6"></div>
+            <div class="p8" id="8piece7"></div>
+            <div class="p8" id="8piece8"></div>
+            <div class="p8" id="8piece9"></div>
+            <div class="p8" id="8piece10"></div>
+        </div>
+        <div class="pieces9" id="p9">
+            <div class="p9" id="9piece1"></div>
+            <div class="p9" id="9piece2"></div>
+            <div class="p9" id="9piece3"></div>
+            <div class="p9" id="9piece4"></div>
+            <div class="p9" id="9piece5"></div>
+            <div class="p9" id="9piece6"></div>
+            <div class="p9" id="9piece7"></div>
+            <div class="p9" id="9piece8"></div>
+            <div class="p9" id="9piece9"></div>
+            <div class="p9" id="9piece10"></div>
+        </div>
+        <div class="pieces10" id="p10">
+            <div class="p101" id="10piece1"></div>
+            <div class="p10" id="10piece2"></div>
+            <div class="p10" id="10piece3"></div>
+            <div class="p10" id="10piece4"></div>
+            <div class="p10" id="10piece5"></div>
+            <div class="p10" id="10piece6"></div>
+            <div class="p10" id="10piece7"></div>
+            <div class="p10" id="10piece8"></div>
+            <div class="p10" id="10piece9"></div>
+            <div class="p1010" id="10piece10"></div>
+        </div>
+</body>
+<script src="scripter.js"></script>
+</html>
